@@ -1,0 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.itens-nav .item-nav {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+}
