@@ -1,0 +1,14 @@
+#task-create-container {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#task-create-container h2 {
+    text-align: center;
+}
+
+
+
+#task-create-container .form-group label {
+    font-size: 1.3em;
+}

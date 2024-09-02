@@ -10,7 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="/css/index/index.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/create.css">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
@@ -34,13 +35,15 @@
             <div class="collapse navbar-collapse d-flex-md justify-content-end" id="navbarNavAltMarkup">
                 <div class="itens-nav navbar-nav">
                     <a class="item-nav nav-link" aria-current="page" href="#">Início</a>
+
+                    <a class="item-nav nav-link" aria-current="page" href="/tasks/create">Criar Evento</a>
                     
                     @auth
                         <a class="item-nav nav-link" href="#">Minhas Tarefas</a>
                         <form action="/logout" method="POST">
                             @csrf
                             <a href="/logout" 
-                               class="nav-link" 
+                               class="item-nav nav-link" 
                                onclick="event.preventDefault();this.closest('form').submit();">Sair</a>
                         </form>
                     @endauth
