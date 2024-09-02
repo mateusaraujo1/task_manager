@@ -7,3 +7,8 @@
     padding-right: 15px !important;
     padding-left: 15px !important;
 }
+
+main {
+    height: 100vh;
+    padding-top: 7.5%;
+}
