@@ -33,16 +33,32 @@
 
             <div class="collapse navbar-collapse d-flex-md justify-content-end" id="navbarNavAltMarkup">
                 <div class="itens-nav navbar-nav">
-                    <a class="item-nav nav-link active" aria-current="page" href="#">Início</a>
-                    <a class="item-nav nav-link" href="#">Minhas Tarefas</a>
-                    <a class="item-nav nav-link" href="#">Pricing</a>
-                    <a class="item-nav nav-link" href="">Disabled</a>
+                    <a class="item-nav nav-link" aria-current="page" href="#">Início</a>
+                    
+                    @auth
+                        <a class="item-nav nav-link" href="#">Minhas Tarefas</a>
+                        <form action="/logout" method="POST">
+                            @csrf
+                            <a href="/logout" 
+                               class="nav-link" 
+                               onclick="event.preventDefault();this.closest('form').submit();">Sair</a>
+                        </form>
+                    @endauth
+
+                    @guest
+                        <a class="item-nav nav-link" href="/login">Entrar</a>
+                        <a class="item-nav nav-link" href="/register">Cadastrar</a>
+                    @endguest
+
+                    {{-- botar o dashboard nas tasks --}}
                 </div>
             </div>
 
         </div>
 
     </nav>
+
+    @yield('content')
 
 </body>
 
