@@ -26,14 +26,14 @@
             <div class="form-group row mb-2 mb-lg-4">
                 <label class="col-lg-2" for="date">Data:</label>
                 <div class="col-6">
-                    <input type="date" class="form-control" id="date" name="date">
+                    <input type="date" class="form-control" id="date" name="date" required>
                 </div>
             </div>
 
             <div class="form-group row mb-2 mb-lg-4">
                 <label class="col-2" for="description">Descrição:</label>
                 <div class="col-md-max">
-                    <textarea name="description" id="description" class="form-control" placeholder="Descrição da tarefa"></textarea>
+                    <textarea name="description" id="description" class="form-control" placeholder="Descrição da tarefa" required></textarea>
                 </div>
             </div>
 

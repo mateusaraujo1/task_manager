@@ -36,7 +36,7 @@
                 <div class="itens-nav navbar-nav">
                     <a class="item-nav nav-link" aria-current="page" href="#">Início</a>
 
-                    <a class="item-nav nav-link" aria-current="page" href="/tasks/create">Criar Evento</a>
+                    <a class="item-nav nav-link" aria-current="page" href="/tasks/create">Criar Tarefa</a>
                     
                     @auth
                         <a class="item-nav nav-link" href="#">Minhas Tarefas</a>
@@ -61,7 +61,7 @@
 
     </nav>
 
-    <main style="border: 1px solid red">
+    <main>
         @if(session('msg'))
             <p class="msg"> {{ session('msg') }}</p>
         @endif
