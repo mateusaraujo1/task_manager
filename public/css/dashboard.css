@@ -1,0 +1,31 @@
+.list-cards {
+    border: 1px solid blue;
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.list-cards .card {
+    width: 175px;
+    height: 250px;
+    margin: 10px;
+}
+
+.list-cards .card-header {
+    font-weight: bold;
+    text-align: center;
+}
+
+.list-cards h6 {
+    font-size: 0.8em;
+}
+
+.text-truncate-6 {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
