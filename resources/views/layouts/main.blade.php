@@ -61,7 +61,14 @@
 
     </nav>
 
-    @yield('content')
+    <main style="border: 1px solid red">
+        @if(session('msg'))
+            <p class="msg"> {{ session('msg') }}</p>
+        @endif
+
+        @yield('content')
+    </main>
+
 
 </body>
 
