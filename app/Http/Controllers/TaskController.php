@@ -27,4 +27,12 @@ class TaskController extends Controller
 
         return redirect('/')->with('msg', 'Tarefa criada com sucesso');
     }
+
+    public function dashboard() {
+        $user = auth()->user();
+
+        $tasks = $user->tasks;
+
+        return view('tasks.dashboard', ['tasks' => $tasks]);
+    }
 }

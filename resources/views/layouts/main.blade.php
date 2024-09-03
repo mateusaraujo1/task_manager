@@ -39,7 +39,7 @@
                     <a class="item-nav nav-link" aria-current="page" href="/tasks/create">Criar Tarefa</a>
                     
                     @auth
-                        <a class="item-nav nav-link" href="#">Minhas Tarefas</a>
+                        <a class="item-nav nav-link" href="/dashboard">Minhas Tarefas</a>
                         <form action="/logout" method="POST">
                             @csrf
                             <a href="/logout" 

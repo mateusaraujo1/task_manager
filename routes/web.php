@@ -12,12 +12,4 @@ Route::get('/tasks/create', [TaskController::class, 'create'])->middleware('auth
 
 Route::post('/tasks/store', [TaskController::class, 'store'])->middleware('auth');
 
-Route::middleware([
-    'auth:sanctum',
-    config('jetstream.auth_session'),
-    'verified',
-])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
-});
+Route::get('/dashboard', [TaskController::class, 'dashboard'])->middleware('auth');
