@@ -10,6 +10,8 @@ Route::get('/', function () {
 
 Route::get('/tasks/create', [TaskController::class, 'create'])->middleware('auth');
 
+Route::post('/tasks/store', [TaskController::class, 'store'])->middleware('auth');
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
