@@ -32,4 +32,8 @@
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  
+
+.card .card-header button {
+    border: none;
+    background-color: #F8F8F8;
+}
