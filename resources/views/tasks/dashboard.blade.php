@@ -7,8 +7,8 @@
     <div class="list-cards col-10 offset-1">
         @foreach ($tasks as $task)
             <div class="card">
-                <div id="title-{{$task->id}}" class="card-header text-truncate">{{$task->title}} 
-                    <button data-bs-toggle="modal" data-bs-target="#exampleModal-{{$task->id}}" class="position-absolute end-0 m-1">
+                <div id="title" class="card-header text-truncate">{{$task->title}} 
+                    <button data-bs-toggle="modal" data-bs-target="#modal-{{$task->id}}" class="position-absolute end-0 m-1">
                         <ion-icon name="expand-outline"></ion-icon>
                     </button>
                 </div>
