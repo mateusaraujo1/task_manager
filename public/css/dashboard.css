@@ -21,9 +21,13 @@
     font-size: 0.8em;
 }
 
-.text-truncate-6 {
+.list-cards .card-buttons {
+    margin-bottom: 0;
+}
+
+.text-truncate-4 {
     display: -webkit-box;
-    -webkit-line-clamp: 6;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
