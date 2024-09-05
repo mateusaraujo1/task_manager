@@ -25,7 +25,7 @@ class TaskController extends Controller
 
         $task->save();
 
-        return redirect('/')->with('msg', 'Tarefa criada com sucesso');
+        return redirect('/dashboard')->with('msg', 'Tarefa criada com sucesso');
     }
 
     public function dashboard() {
@@ -34,5 +34,18 @@ class TaskController extends Controller
         $tasks = $user->tasks;
 
         return view('tasks.dashboard', ['tasks' => $tasks]);
+    }
+
+    public function destroy($id) {
+        $user = auth()->user();
+        $task = Task::findOrFail($id);
+
+        if ($user->id != $task->user_id) {
+            return redirect('/');
+        }
+
+        Task::findOrFail($id)->delete();
+
+        return redirect('/dashboard')->with('msg', 'Tarefa "' . $task->title . '" excluída com sucesso');
     }
 }

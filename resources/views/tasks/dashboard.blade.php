@@ -20,8 +20,15 @@
                     <p class="card-text text-truncate-4 text-justify">{{$task->description}}</p>
                     
                     <div class="card-buttons d-flex justify-content-between position-absolute bottom-0 start-0 end-0 p-3">
+
                         <a href="#" class="btn btn-dark"><ion-icon name="create-outline"></ion-icon></a>
-                        <a href="#" class="btn btn-dark"><ion-icon name="trash-outline"></ion-icon></a>
+
+                        <form action="tasks/delete/{{$task->id}}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                            <button class="btn btn-dark"><ion-icon name="trash-outline"></ion-icon></button>
+                        </form>
+
                     </div>
                 </div>
 
