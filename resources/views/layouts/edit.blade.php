@@ -2,7 +2,7 @@
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="modalLabel title">{{$task->title}}</h1>
+                <h1 class="modal-title fs-5" id="modalLabel title">Editar tarefa</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -27,7 +27,7 @@
 
                     <div class="modal-footer">
                         <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Fechar</button>
-                        <button type="button" class="btn btn-dark">Salvar</button>
+                        <button type="submit" class="btn btn-dark">Salvar</button>
                     </div>
 
                   </form>

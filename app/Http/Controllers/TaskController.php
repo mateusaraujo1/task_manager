@@ -48,4 +48,12 @@ class TaskController extends Controller
 
         return redirect('/dashboard')->with('msg', 'Tarefa "' . $task->title . '" excluída com sucesso');
     }
+
+    public function update(Request $request) {
+        $data = $request->all();
+
+        Task::findOrFail($request->id)->update($data);
+
+        return redirect('/dashboard')->with('msg', 'Tarefa "' . $request->title . '" atualizada com sucesso');
+    }
 }
