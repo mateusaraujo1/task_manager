@@ -21,7 +21,9 @@
                     
                     <div class="card-buttons d-flex justify-content-between position-absolute bottom-0 start-0 end-0 p-3">
 
-                        <a href="#" class="btn btn-dark"><ion-icon name="create-outline"></ion-icon></a>
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalEdit-{{$task->id}}">
+                            <ion-icon name="create-outline"></ion-icon>
+                        </button>
 
                         <form action="tasks/delete/{{$task->id}}" method="POST">
                             @csrf
@@ -33,6 +35,7 @@
                 </div>
 
                 @include('layouts.show')
+                @include('layouts.edit')
             </div>
         @endforeach
 
