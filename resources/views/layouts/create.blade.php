@@ -16,7 +16,7 @@
                     
                     <div class="form-group py-3">
                         <label for="date">Data:</label>
-                        <input type="date" class="form-control" id="date" name="date">
+                        <input type="date" class="form-control" id="date" name="date" required>
                     </div>
 
                     <div class="form-group">

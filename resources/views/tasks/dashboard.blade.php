@@ -36,13 +36,15 @@
 
                 @include('layouts.show')
                 @include('layouts.edit')
+
             </div>
+
             @endforeach
 
     </div>
 
-    <button data-bs-toggle="modal" data-bs-target="#modal-create" class="position-fixed end-0 m-1">
-        <ion-icon name="expand-outline">teste</ion-icon>
+    <button data-bs-toggle="modal" data-bs-target="#modal-create" id="button-create-modal" class="position-fixed end-0 bottom-0 m-5 btn btn-dark rounded-circle">
+        <ion-icon class="icon" name="add-outline"></ion-icon>
     </button>
     
     @include('layouts.create')
