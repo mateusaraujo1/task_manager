@@ -37,9 +37,14 @@
                 @include('layouts.show')
                 @include('layouts.edit')
             </div>
-        @endforeach
-
+            @endforeach
 
     </div>
+
+    <button data-bs-toggle="modal" data-bs-target="#modal-create" class="position-fixed end-0 m-1">
+        <ion-icon name="expand-outline">teste</ion-icon>
+    </button>
+    
+    @include('layouts.create')
 
 @endsection
