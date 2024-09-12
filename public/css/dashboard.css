@@ -36,7 +36,8 @@
 
 .card .card-header button {
     border: none;
-    background-color: #00ADB5;
+    background-color: transparent;
+    color: white;
 }
 
 

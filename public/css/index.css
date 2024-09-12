@@ -33,3 +33,12 @@ nav {
 nav .nav-link {
     color: white;
 }
+
+nav .navbar-toggler {
+    color: white !important;
+}
+
+main #button-create-modal {
+    background-color: #00ADB5;
+    border: none;
+}
