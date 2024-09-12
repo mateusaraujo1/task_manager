@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body {
+    background-color: #F8F8F8 !important;
+}
+
 .itens-nav .item-nav {
     padding-right: 15px !important;
     padding-left: 15px !important;
@@ -20,4 +24,12 @@ main {
     margin-bottom: 0;
     text-align: center;
     padding: 10px;
+}
+
+nav {
+    background-color: #00ADB5;
+}
+
+nav .nav-link {
+    color: white;
 }

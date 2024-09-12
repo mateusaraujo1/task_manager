@@ -1,5 +1,4 @@
 .list-cards {
-    border: 1px solid blue;
     margin-top: 5%;
     display: flex;
     flex-wrap: wrap;
@@ -15,6 +14,8 @@
 .list-cards .card-header {
     font-weight: bold;
     text-align: center;
+    background-color: #00ADB5;
+    color: white;
 }
 
 .list-cards h6 {
@@ -35,7 +36,7 @@
 
 .card .card-header button {
     border: none;
-    background-color: #F8F8F8;
+    background-color: #00ADB5;
 }
 
 

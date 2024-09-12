@@ -28,11 +28,11 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-info">
 
         <div class="container-fluid">
 
-            <a class="navbar-brand" href="/">Task Manager</a>
+            <a class="navbar-brand nav-link" href="/">Task Manager</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
