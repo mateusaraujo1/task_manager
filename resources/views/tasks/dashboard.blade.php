@@ -7,11 +7,11 @@
     <div class="list-cards col-10 offset-1">
         @foreach ($tasks as $task)
             <div class="card">
-                <div id="title" class="card-header text-truncate">{{$task->title}} 
-                    <button data-bs-toggle="modal" data-bs-target="#modal-{{$task->id}}" class="position-absolute end-0 m-1">
-                        <ion-icon name="expand-outline"></ion-icon>
-                    </button>
-                </div>
+                <div id="title" class="card-header text-truncate">{{$task->title}} </div>
+
+                <button id="btn-modal-show" data-bs-toggle="modal" data-bs-target="#modal-{{$task->id}}" class="position-absolute end-0 me-1 mt-1">
+                    <ion-icon name="resize-outline"></ion-icon>
+                </button>
                 
                 
                 <div class="card-body">

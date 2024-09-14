@@ -34,13 +34,13 @@
     text-overflow: ellipsis;
   }
 
-.card .card-header button {
+.card #btn-modal-show {
     border: none;
     background-color: transparent;
     color: white;
 }
 
-.card .card-header button:hover {
+.card #btn-modal-show:hover {
 }
 
 
