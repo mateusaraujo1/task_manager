@@ -40,8 +40,11 @@
     color: white;
 }
 
+.card .card-header button:hover {
+}
 
-#button-create-modal {
+
+#btn-modal-create {
     width: 75px;
     height: 75px;
     display: flex;
@@ -49,7 +52,28 @@
     align-items: center;
 }
 
-#button-create-modal .icon {
+#btn-modal-create .icon {
     width: 40px;
     height: 40px;
 }
+
+.card {
+    border: 1px solid #00ADB5 !important;
+}
+
+.card .card-body {
+    color: #0f3346;
+}
+
+.card #btn-modal-edit, .card #btn-modal-delete {
+    width: 65px;
+    height: 40px;
+    color: white;
+    border: none;
+    background-color: #00ADB5;
+}
+
+.card #btn-modal-edit:hover, .card #btn-modal-delete:hover {
+    background-color: #007d96;
+}
+

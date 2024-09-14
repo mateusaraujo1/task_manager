@@ -21,14 +21,14 @@
                     
                     <div class="card-buttons d-flex justify-content-between position-absolute bottom-0 start-0 end-0 p-3">
 
-                        <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalEdit-{{$task->id}}">
+                        <button type="button" class="btn btn-info" id="btn-modal-edit" data-bs-toggle="modal" data-bs-target="#modalEdit-{{$task->id}}">
                             <ion-icon name="create-outline"></ion-icon>
                         </button>
 
                         <form action="tasks/delete/{{$task->id}}" method="POST">
                             @csrf
                             @method('DELETE')
-                            <button class="btn btn-danger"><ion-icon name="trash-outline"></ion-icon></button>
+                            <button class="btn btn-danger" id="btn-modal-delete"><ion-icon name="trash-outline"></ion-icon></button>
                         </form>
 
                     </div>
@@ -43,7 +43,7 @@
 
     </div>
 
-    <button data-bs-toggle="modal" data-bs-target="#modal-create" id="button-create-modal" class="position-fixed end-0 bottom-0 m-5 btn btn-dark rounded-circle">
+    <button data-bs-toggle="modal" data-bs-target="#modal-create" id="btn-modal-create" class="position-fixed end-0 bottom-0 m-5 btn btn-dark rounded-circle">
         <ion-icon class="icon" name="add-outline"></ion-icon>
     </button>
     

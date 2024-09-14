@@ -17,9 +17,9 @@ main {
 }
 
 .msg {
-    background-color: #D4EDDA;
-    color: #155724;
-    border: 1px solid #c3e6cb;
+    background-color: #E6F7F8;
+    color: #007d96;
+    border: 1px solid #95dde1;
     width: 100%;
     margin-bottom: 0;
     text-align: center;
@@ -34,11 +34,19 @@ nav .nav-link {
     color: white;
 }
 
+nav .nav-link:hover {
+    color: #0f3346;
+}
+
 nav .navbar-toggler {
     color: white !important;
 }
 
-main #button-create-modal {
+main #btn-modal-create {
     background-color: #00ADB5;
     border: none;
+}
+
+main #btn-modal-create:hover {
+    background-color: #007d96;
 }
