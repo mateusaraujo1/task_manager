@@ -1,9 +1,9 @@
-<div class="modal fade" id="modalEdit-{{$task->id}}" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+<div class="modal fade edit-modal" id="modalEdit-{{$task->id}}" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
             <div class="modal-header">
                 <h1 class="modal-title fs-5" id="modalLabel title">Editar tarefa</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <form action="/tasks/update/{{$task->id}}" method="POST" enctype="multipart/form-data">
@@ -26,8 +26,8 @@
                     </div>
 
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Fechar</button>
-                        <button type="submit" class="btn btn-dark">Salvar</button>
+                        <button type="button" class="btn btn-dark close-btn" data-bs-dismiss="modal">Fechar</button>
+                        <button type="submit" class="btn btn-dark save-btn">Salvar</button>
                     </div>
 
                   </form>

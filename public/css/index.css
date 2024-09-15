@@ -17,7 +17,7 @@ main {
 }
 
 .msg {
-    background-color: #E6F7F8;
+    background-color: #d8fcfe;
     color: #007d96;
     border: 1px solid #95dde1;
     width: 100%;
@@ -29,6 +29,7 @@ main {
 
 nav {
     background-color: #00ADB5;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 nav .nav-link {
