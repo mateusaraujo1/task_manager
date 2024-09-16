@@ -42,7 +42,7 @@
 
             <div class="collapse navbar-collapse d-flex-md justify-content-end" id="navbarNavAltMarkup">
                 <div class="itens-nav navbar-nav">
-                    <a class="item-nav nav-link" aria-current="page" href="#">Início</a>
+                    <a class="item-nav nav-link" aria-current="page" href="/welcome">Início</a>
 
                     <a class="item-nav nav-link" aria-current="page" href="/tasks/create">Criar Tarefa</a>
                     
@@ -61,7 +61,6 @@
                         <a class="item-nav nav-link" href="/register">Cadastrar</a>
                     @endguest
 
-                    {{-- botar o dashboard nas tasks --}}
                 </div>
             </div>
 
@@ -71,7 +70,10 @@
 
     <main>
         @if(session('msg'))
-            <p class="msg"> {{ session('msg') }}</p>
+        <div class="alert alert-info alert-dismissible fade show text-center msg" role="alert">
+            {{ session('msg') }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
         @endif
 
         @yield('content')

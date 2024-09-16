@@ -1,6 +1,10 @@
 #task-create-container {
     margin-top: 7.5%;
-    padding: 10px;
+    padding: 15px;
+    color: #0f3346;
+    border: 1px solid #00ADB5;
+    border-radius: 10px;
+    background-color: white;
 }
 
 #task-create-container h2 {
@@ -13,4 +17,10 @@
 
 #task-create-container #button-create {
     font-size: 1.2em;
+    background-color: #00ADB5;
+    border: none;
+}
+
+#task-create-container #button-create:hover {
+    background-color: #007D96;
 }

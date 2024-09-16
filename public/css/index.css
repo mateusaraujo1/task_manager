@@ -17,14 +17,8 @@ main {
 }
 
 .msg {
-    background-color: #d8fcfe;
-    color: #007d96;
-    border: 1px solid #95dde1;
-    width: 100%;
-    margin-bottom: 0;
-    text-align: center;
-    padding: 10px;
-    margin-bottom: -45px;
+    border: 1px solid #95dde1 !important;
+    border-radius: 0 !important;
 }
 
 nav {
@@ -46,7 +40,7 @@ nav .navbar-toggler {
 
 main #btn-modal-create {
     background-color: #00ADB5;
-    border: none;
+    border: 1px solid #F8F8F8;
 }
 
 main #btn-modal-create:hover {

@@ -8,8 +8,7 @@
     <div id="task-create-container"
         class="col-10 offset-1
                 col-md-6 offset-md-3
-                col-lg-4 offset-lg-4"
-        style="border: 1px solid red">
+                col-lg-4 offset-lg-4">
         <h2 class="mb-3">Crie sua tarefa</h2>
 
         <form action="/tasks/store" method="POST" enctype="multipart/form-data">
